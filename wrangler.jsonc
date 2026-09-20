@@ -1,0 +1,5 @@
+{
+	// Cloudflare Pages project config (project name, static build output)
+	"name": "marctrem-ca",
+	"pages_build_output_dir": "build"
+}
