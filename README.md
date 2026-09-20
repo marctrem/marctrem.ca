@@ -18,9 +18,11 @@ npm run preview
 
 ## Deploy (Cloudflare Pages)
 
+Pushes to `main` deploy automatically via the Cloudflare Pages GitHub integration (project `marctrem-ca`: build command `npm run build`, output directory `build`).
+
+For one-off manual deploys:
+
 ```sh
 npx wrangler login
 npx wrangler pages deploy build
 ```
-
-Or connect this repository in the Cloudflare dashboard: build command `npm run build`, output directory `build` (see `wrangler.jsonc`). The custom domain `marctrem.ca` can be attached to the Pages project.
