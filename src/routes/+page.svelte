@@ -1,13 +1,13 @@
 <svelte:head>
-	<title>Marc Trem</title>
-	<meta name="description" content="Personal homepage of Marc Trem." />
+	<title>Marc Tremblay</title>
+	<meta name="description" content="Personal homepage of Marc Tremblay." />
 </svelte:head>
 
 <main>
-	<h1>Marc Trem</h1>
+	<h1>Marc Tremblay</h1>
 	<p class="tagline">Personal homepage.</p>
 	<nav>
 		<a href="https://github.com/marctrem">GitHub</a>
-		<a href="mailto:marc@marctrem.ca">Email</a>
+		<span class="email">m&nbsp;[@]&nbsp;rctrem.ca</span>
 	</nav>
 </main>

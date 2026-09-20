@@ -72,6 +72,10 @@ h1 {
 	color: var(--muted);
 }
 
+.email {
+	color: var(--muted);
+}
+
 nav {
 	display: flex;
 	gap: 1.5rem;
