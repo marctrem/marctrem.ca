@@ -231,14 +231,6 @@
 				</div>
 			</div>
 
-			<canvas bind:this={brainEl} width="620" height="330" class="brain"></canvas>
-			<div class="cap">
-				Brain-shaped activation map &mdash; each neuron of the model's sub-circuit drawn at its real
-				FAFB position, coloured by activation. <span class="sw blue"></span> inhibited,
-				<span class="sw orange"></span> excited. Bright ring = descending/motor readout.
-				<strong>Drag to rotate, scroll to zoom.</strong>
-			</div>
-
 			{#if prob !== null}
 				<div class="result" class:up={prob >= 0.5} class:down={prob < 0.5}>
 					<div class="arm">{prob >= 0.5 ? '\u2191' : '\u2193'}</div>
@@ -252,6 +244,14 @@
 			{:else}
 				<div class="result">Loading model&hellip;</div>
 			{/if}
+
+			<canvas bind:this={brainEl} width="620" height="330" class="brain"></canvas>
+			<div class="cap">
+				Brain-shaped activation map &mdash; each neuron of the model's sub-circuit drawn at its real
+				FAFB position, coloured by activation. <span class="sw blue"></span> inhibited,
+				<span class="sw orange"></span> excited. Bright ring = descending/motor readout.
+				<strong>Drag to rotate, scroll to zoom.</strong>
+			</div>
 
 			<div class="lat">
 				inference {inferMs === null ? '\u2014' : inferMs.toFixed(1)} ms (render {(
